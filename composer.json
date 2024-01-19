@@ -1,0 +1,56 @@
+{
+    "name": "nodeloc/flarum-ignore-hidden-tags",
+    "description": "Let select group ignore hidden tags",
+    "keywords": [
+        "flarum"
+    ],
+    "type": "flarum-extension",
+    "license": "MIT-enna",
+    "require": {
+        "flarum/core": "^1.2.0",
+        "flarum/tags": "^1.0"
+    },
+    "authors": [
+        {
+            "name": "Nodeloc",
+            "email": "james@nodeloc.com",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Nodeloc\\IgnoreHiddenTags\\": "src/"
+        }
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "Ignore Hidden Tags",
+            "category": "",
+            "icon": {
+                "name": "fas fa-eye",
+                "color": "#238c59",
+                "backgroundColor": "#fff"
+            }
+        },
+        "flarum-cli": {
+            "modules": {
+                "admin": true,
+                "forum": true,
+                "js": true,
+                "jsCommon": true,
+                "css": true,
+                "locale": true,
+                "gitConf": true,
+                "githubActions": true,
+                "prettier": true,
+                "typescript": true,
+                "bundlewatch": true,
+                "backendTesting": false,
+                "editorConfig": false,
+                "styleci": true
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
