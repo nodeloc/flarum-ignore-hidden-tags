@@ -1,12 +1,11 @@
 <?php
-namespace Nodeloc\IgnoreHiddenTags;
+namespace Nodeloc\IgnoreHiddenTags\Filter;
 
 use Flarum\Filter\FilterState;
 use Flarum\Query\QueryCriteria;
 use Flarum\Tags\Tag;
-use Flarum\Tags\Filter\HideHiddenTagsFromAllDiscussionsPage;
 
-class IgnoreHiddenTagsFromAllDiscussionsPage extends HideHiddenTagsFromAllDiscussionsPage
+class IgnoreHiddenTagsFromAllDiscussionsPage
 {
     public function __invoke(FilterState $filter, QueryCriteria $queryCriteria)
     {

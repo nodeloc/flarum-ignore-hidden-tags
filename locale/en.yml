@@ -1,0 +1,8 @@
+ignore-hidden-tags:
+  # For more details on the format
+  # Checkout https://docs.flarum.org/extend/i18n/#appendix-a-standard-key-format
+  admin:
+    permissions:
+      select-group-ignore: Select group to ignore hidden
+
+  forum:
